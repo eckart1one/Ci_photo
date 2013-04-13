@@ -17,7 +17,7 @@
 <script type="text/javascript"> 
   $(document).ready(function(){
       $("#ingresar").click(function(){
-        alert("hola");
+        alert($("#codigo").val());
       });
   });
 </script>
@@ -106,7 +106,7 @@
       <div class="content"> <a id="popupProjectsClose"><img src="images/cross.png" width="20" alt="" /></a>
         <form>
             <h2>Ingresa tu Codigo aqui</h2>
-            <input type="input" />             
+            <input type="input" id="codigo">             
             <input type="submit" value="Enviar información" id="ingresar">
         </form>
         <h1>Projects: Lorem Ipsum 33333</h1>
