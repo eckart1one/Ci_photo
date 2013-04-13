@@ -16,8 +16,8 @@
 <script type="text/javascript" src="<?php echo base_url()?>assets/js/scripts/nav.js"></script>
 <script type="text/javascript"> 
   $(document).ready(function(){
-      $("#ingresar").click(function(){
-        alert($("#codigo").val());
+    $('#codigo').submit(function(){
+        alert($("#clave").val());
       });
   });
 </script>
@@ -104,9 +104,9 @@
   <div class="customScrollBox">
     <div class="container">
       <div class="content"> <a id="popupProjectsClose"><img src="images/cross.png" width="20" alt="" /></a>
-        <form>
+        <?php $att = array('id' => 'codigo'); echo form_open('manejador/clave', $att); ?>
             <h2>Ingresa tu Codigo aqui</h2>
-            <input type="input" id="codigo">             
+            <input type="input" name="clave" id="clave">             
             <input type="submit" value="Enviar información" id="ingresar">
         </form>
         <h1>Projects: Lorem Ipsum 33333</h1>
