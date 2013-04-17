@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Manejador extends CI_Controller {
+class Admin extends CI_Controller {
 
 	public function __construct()
 	{
@@ -13,13 +13,13 @@ class Manejador extends CI_Controller {
 	public function index()
 	{
 		
-		$this->load->view('comercial');
+		$this->load->view('_template');
 	}
 
-	public function clave(){
-		echo $this->input->post('clave');
-
-		$this->load->view('seleccion_vista');
+	public function clientes()
+	{
+		$this->load->view('clientes_gestor');
 	}
+
 
 }
