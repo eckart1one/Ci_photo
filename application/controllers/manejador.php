@@ -16,10 +16,13 @@ class Manejador extends CI_Controller {
 		$this->load->view('comercial');
 	}
 
-	public function clave(){
+	public function clave()
+	{
 		echo $this->input->post('clave');
 
 		$this->load->view('seleccion_vista');
 	}
+
+
 
 }

@@ -702,11 +702,11 @@ line-height: 25px;
 text-shadow: 0 1px 0 #fff;
 font-weight: bold;
 padding-left: 10px;
-margin: -5px 0 5px 0;
+margin: 5px 0 5px 0;
 text-transform: uppercase;
 }
 
-fieldset input[type=text] {
+fieldset input {
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
@@ -725,7 +725,7 @@ width: 96%;
 margin: 0 10px;
 }
 
-fieldset input[type=text]:focus {
+fieldset input:focus {
 outline: none;
 border: 1px solid #77BACE;
 -webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;

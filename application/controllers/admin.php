@@ -13,13 +13,20 @@ class Admin extends CI_Controller {
 	public function index()
 	{
 		
-		$this->load->view('_template');
+		$data['pagina'] = 	'admin_gestor';
+		$this->load->view('_template',$data);
 	}
 
-	public function clientes()
-	{
-		$this->load->view('clientes_gestor');
+	public function registro_agregar()
+	{   
+		$data['pagina'] = 	'registro_agregar';
+		$this->load->view('_template.php',$data);
 	}
 
 
+	public function agregar()
+	{   
+		$data['pagina'] = 	'admin_gestor';
+		$this->load->view('_template.php',$data);
+	}
 }
