@@ -7,14 +7,22 @@ class Admin extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('form');
 		$this->load->helper('url');
+
+		if($this->session->userdata('loggedIn'))
+		{
+			
+		}else
+		{
+
+			redirect('login', 'location');
+		}
 	}
 
 
 	public function index()
-	{
-		
-		$data['pagina'] = 	'admin_gestor';
-		$this->load->view('_template',$data);
+	{   
+		$data['pagina'] = 	'registro_agregar';
+		$this->load->view('_template.php',$data);
 	}
 
 	public function registro_agregar()

@@ -73,7 +73,7 @@
 	
 	<section id="secondary_bar">
 		<div class="user">
-			<p>John Doe (<a href="#">3 Messages</a>)</p>
+			<p>John Doe (<a href="">3 Messages</a>)</p>
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
@@ -101,7 +101,7 @@
 		<h3>Admin</h3>
 		<ul class="toggle">
 			<li class="icn_settings"><a href="#">Options</a></li>			
-			<li class="icn_jump_back"><a href="#">Logout</a></li>
+			<li class="icn_jump_back"><a href="<?php echo site_url()?>login/logout">Logout</a></li>
 		</ul>
 		
 		<footer>
