@@ -14,7 +14,7 @@
   <form method="post" action="<?php echo site_url()?>login/do_login" class="login">
     <p>
       <label for="login">Usuario:</label>
-      <input type="text" name="login" id="login" value="">
+      <input type="text" name="usuario" id="usuario" value="">
     </p>
 
     <p>

@@ -8,49 +8,24 @@
 			<table class="tablesorter" cellspacing="0"> 
 			<thead> 
 				<tr> 
-   					<th></th> 
-    				<th>Entry Name</th> 
-    				<th>Category</th> 
-    				<th>Created On</th> 
-    				<th>Actions</th> 
+    				<th>Clave</th> 
+    				<th>Tipo</th> 
+    				<th>Cliente</th> 
+    				<th>Lugar</th> 
+    				<th>Fecha</th> 
 				</tr> 
 			</thead> 
 			<tbody> 
+				<?php foreach ($resultados as $resultado): ?>
 				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Lorem Ipsum Dolor Sit Amet</td> 
-    				<td>Articles</td> 
-    				<td>5th April 2011</td> 
+					<td><?php echo $resultado->clave; ?></td> 
+					<td><?php echo $resultado->tipo; ?></td> 
+					<td><?php echo $resultado->cliente; ?></td> 
+					<td><?php echo $resultado->lugar; ?></td> 
+					<td><?php echo $resultado->fecha; ?></td> 
     				<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
 				</tr> 
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Ipsum Lorem Dolor Sit Amet</td> 
-    				<td>Freebies</td> 
-    				<td>6th April 2011</td> 
-   				 	<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr>
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Sit Amet Dolor Ipsum</td> 
-    				<td>Tutorials</td> 
-    				<td>10th April 2011</td> 
-    				<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr> 
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Dolor Lorem Amet</td> 
-    				<td>Articles</td> 
-    				<td>16th April 2011</td> 
-   				 	<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr>
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Dolor Lorem Amet</td> 
-    				<td>Articles</td> 
-    				<td>16th April 2011</td> 
-   				 	<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr>  
+				<?php endforeach ?>
 			</tbody> 
 			</table>
 			</div><!-- end of #tab1 -->
@@ -66,46 +41,6 @@
     				<th>Actions</th> 
 				</tr> 
 			</thead> 
-			<tbody> 
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Lorem Ipsum Dolor Sit Amet</td> 
-    				<td>Mark Corrigan</td> 
-    				<td>5th April 2011</td> 
-    				<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr> 
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Ipsum Lorem Dolor Sit Amet</td> 
-    				<td>Jeremy Usbourne</td> 
-    				<td>6th April 2011</td> 
-   				 	<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr>
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Sit Amet Dolor Ipsum</td> 
-    				<td>Super Hans</td> 
-    				<td>10th April 2011</td> 
-    				<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr> 
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Dolor Lorem Amet</td> 
-    				<td>Alan Johnson</td> 
-    				<td>16th April 2011</td> 
-   				 	<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr> 
-				<tr> 
-   					<td><input type="checkbox"></td> 
-    				<td>Dolor Lorem Amet</td> 
-    				<td>Dobby</td> 
-    				<td>16th April 2011</td> 
-   				 	<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
-				</tr> 
-			</tbody> 
-			</table>
-
-			</div><!-- end of #tab2 -->
 			
 		</div><!-- end of .tab_container -->
 		

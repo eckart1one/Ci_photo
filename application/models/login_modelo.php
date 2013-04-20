@@ -4,9 +4,9 @@ class Login_modelo extends CI_Model{
 
 	public function login($usuario, $password)
 	{
-		$this->db->select('id_usuario, nombre, usuario, id_perfil, email');
+		$this->db->select('nip');
 		$this->db->from('usuarios');
-		$this->db->where('usuario = ' . "'" . $this->db->escape_str( $usuario ) . "'");
+		$this->db->where('nip = ' . "'" . $this->db->escape_str( $usuario ) . "'");
 		$this->db->where('password = ' . "'" . MD5($password) . "'");
 		$this->db->limit(1);
 
