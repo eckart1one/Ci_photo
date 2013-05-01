@@ -26,8 +26,9 @@ class Admin_modelo extends CI_Model{
 		return $query->num_rows();
 	}
 
-	public function agregar_usuario($usuario, $password)
+	public function registro_gr($datos)
 	{
+		
 		$this->db->select('nip');
 		$this->db->from('usuarios');
 		$this->db->where('nip = ' . "'" . $this->db->escape_str( $usuario ) . "'");
@@ -44,6 +45,11 @@ class Admin_modelo extends CI_Model{
 		{
 			return false;
 		}
+	}
+
+	public function registro_guardar($datos)
+	{
+		$this->db->insert('cuentas', $datos); 
 	}
 
 }
